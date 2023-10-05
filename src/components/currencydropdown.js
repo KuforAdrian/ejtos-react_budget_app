@@ -1,17 +1,19 @@
 //import React, { useContext, useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
+import './componentcss/style.css';
 
 function CurrencyDropDown() {
   return (
     <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Dropdown Button
+       Currency (£ Pound)
       </Dropdown.Toggle>
 
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      <Dropdown.Menu className="dropdown">
+        <Dropdown.Item href="#/action-1">£ Pound</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">$ Dollar</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">€ Euro</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">₹ Ruppee</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

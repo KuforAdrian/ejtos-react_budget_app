@@ -16,6 +16,7 @@ import ExpenseList from './components/ExpenseList';
 
 
 //import ExpenseItem from './components/ExpenseItem';
+import CurrencyDropDown  from './components/currencydropdown';
 
 
 import AllocationForm from './components/AllocationForm';
@@ -53,6 +54,14 @@ const App = () => {
                                                     <ExpenseTotal />
                                                 </div>
                         }        
+
+                        {
+                            /* Add CurrrencyDropDown component here */
+                            <div className="col-sm">
+                                <CurrencyDropDown/>
+                            </div>
+                        }    
+                        
                        
                         {
                             /* Add ExpenseList component here */
