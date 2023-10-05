@@ -15,7 +15,7 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 
 
-import ExpenseItem from './components/ExpenseItem';
+//import ExpenseItem from './components/ExpenseItem';
 
 
 import AllocationForm from './components/AllocationForm';
