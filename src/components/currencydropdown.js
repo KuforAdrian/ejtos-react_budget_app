@@ -4,8 +4,8 @@ import './componentcss/style.css';
 
 function CurrencyDropDown() {
   return (
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+    <Dropdown className="drop">
+      <Dropdown.Toggle variant="success" id="dropdown-basic" >
        Currency (£ Pound)
       </Dropdown.Toggle>
 
