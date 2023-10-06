@@ -11,3 +11,27 @@
 .alert{
     width: 350px;
 }
+
+.increase,
+.decrease {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Makes the button circular */
+  font-weight: bold;
+  font-size: 25px; /* Set the font size for the plus and minus signs */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.increase {
+  background-color: rgb(131, 233, 131); /* Set the background color for the increase button to green */
+}
+
+.decrease {
+  background-color: red; /* Set the background color for the decrease button to red */
+}
