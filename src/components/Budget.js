@@ -4,7 +4,7 @@ import './componentcss/style.css';
 
 
 const Budget = () => {
-    const { budget, expenses} = useContext(AppContext);
+    const { budget, expenses, currency} = useContext(AppContext);
     const [newBudget, setNewBudget] = useState(budget);
     const totalExpenses = expenses.reduce((total, item) => {
         return (total = total + item.cost);
@@ -24,7 +24,7 @@ const Budget = () => {
     }
     return (
 <div className='alert alert-secondary'>
-    <span>Budget: £</span><input type="number" step="10" value={newBudget} onChange={handleBudgetChange} max="20000"></input>
+    <span>Budget: {currency}</span><input type="number" step="10" value={newBudget} onChange={handleBudgetChange} max="20000"></input>
 </div>
     );
 };

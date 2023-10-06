@@ -9,6 +9,7 @@ function CurrencyDropDown() {
 
 
     const selectedCurrency = (event) => {
+        console.log(event);
             dispatch({
                 type: 'CHG_CURRENCY',
                 payload: event
