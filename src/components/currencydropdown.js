@@ -5,8 +5,7 @@ import { AppContext } from '../context/AppContext';
 
 function CurrencyDropDown() {
    
-    const { dispatch } = useContext(AppContext);
-
+    const { dispatch, currency } = useContext(AppContext);
 
     const selectedCurrency = (event) => {
         console.log(event);
@@ -19,14 +18,14 @@ function CurrencyDropDown() {
    return (
     <Dropdown onSelect={selectedCurrency} className="drop">
       <Dropdown.Toggle variant="success" id="dropdown-basic" >
-       Currency (£ Pound)
+       Currency ({currency})
       </Dropdown.Toggle>
 
       <Dropdown.Menu className="dropdown">
-        <Dropdown.Item href="#/action-1" eventKey="£">£ Pound</Dropdown.Item>
-        <Dropdown.Item href="#/action-2" eventKey="$">$ Dollar</Dropdown.Item>
-        <Dropdown.Item href="#/action-3" eventKey="€">€ Euro</Dropdown.Item>
-        <Dropdown.Item href="#/action-3" eventKey="₹">₹ Ruppee</Dropdown.Item>
+        <Dropdown.Item href="#/action-1" eventKey="£ Pound">£ Pound</Dropdown.Item>
+        <Dropdown.Item href="#/action-2" eventKey="$ Dollar">$ Dollar</Dropdown.Item>
+        <Dropdown.Item href="#/action-3" eventKey="€ Euros">€ Euro</Dropdown.Item>
+        <Dropdown.Item href="#/action-3" eventKey="₹ Ruppee">₹ Ruppee</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
